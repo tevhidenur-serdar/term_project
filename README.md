@@ -12,8 +12,8 @@ This is a Python game where users answer questions and accumulate scores based o
 5. If the user chooses to provide an answer, they can enter their response. If the answer is correct, the score will increase; otherwise, the score will decrease. The score and remaining time will be displayed after each question.
 6. If the user chooses to request a letter, the first missing letter will be revealed. Subsequent requests will reveal the next missing letters.
 7. This pattern continues until the last question is reached or the time limit is exceeded.
-8. At the end of the game, the final score and remaining time (if applicable) will be displayed. The top scores will be saved in a leaderboard file.
-9. The user will have the option to play again, exit the game, or view the leaderboard.
+8. At the end of the game, the final score and remaining time (if applicable) will be displayed. The top scores will be saved in a database file.
+9. The user will have the option to play again, exit the game, or view the database.
 
 ## Code Explanation
 
@@ -30,8 +30,8 @@ The code consists of several functions:
 The main program prompts the user for their name, reads the questions from a file, initializes the time limit, and starts the game. It calls the necessary functions to play the game, store user information, update the leaderboard, and offer options to the user.
 
 ## File Structure
-
-The game requires a text file containing the questions and answers. The file format should follow the guidelines specified in the code.
+The program have one text file:
+- `soru.txt`:This txt file stores the questions and answers for using in the game.
 
 Additionally, the program uses two CSV files:
 - `database.csv`: Stores user information (username, score, remaining time).
